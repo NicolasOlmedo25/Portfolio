@@ -13,16 +13,14 @@
   <body>
     <header>
       <nav>
-        <div class="menu">
-          <ul class="lista">
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#sobre-mi">Sobre mi </a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#estudios">Estudios</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-          </ul>
-        </div>
+        <button id="boton-menu" aria-label="Abrir menu">&#9776;</button>
+        <ul id="menu-nav">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre-mi">Sobre mi </a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#estudios">Estudios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
       </nav>
     </header>
     <main>
@@ -55,8 +53,16 @@
         </div>
       </section>
       <section id="habilidades">
-        <div class="skills">
-          <h2>Habilidades</h2>
+        <div class="skills"></div>
+        <h2>Habilidades</h2>
+        <div class="html">
+          <i class="fa-brands fa-html5"></i>
+        </div>
+        <div class="css">
+          <i class="fa-brands fa-css3-alt"></i>
+        </div>
+        <div class="github">
+          <i class="fa-brands fa-github"></i>
         </div>
       </section>
       <section id="estudios">
@@ -81,6 +87,7 @@
       <section id="contacto">
         <div class="contact">
           <h2>Contacto</h2>
+          <h3>Mis redes sociales</h3>
         </div>
       </section>
     </main>
@@ -90,5 +97,11 @@
         <p>Curso de Desarrollador Web</p>
       </div>
     </footer>
+    <script>
+      const botonMenu=document,getElementByld('boton-menu');
+          const menuNav=document,querySelector('nav ul');
+
+          botonMenu.addEventListener('click',()=>{menuNav.classList.toggle('activo');});
+    </script>
   </body>
 </html>
