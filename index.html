@@ -13,21 +13,25 @@
   <body>
     <header>
       <nav>
-        <button id="boton-menu" aria-label="Abrir menu">&#9776;</button>
-        <ul id="menu-nav">
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#sobre-mi">Sobre mi </a></li>
-          <li><a href="#habilidades">Habilidades</a></li>
-          <li><a href="#estudios">Estudios</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
+        <div class="superior">
+          <div class="nombre">
+            <h1>Nicolas Olmedo</h1>
+            <p>Estudiante de desarrollo web</p>
+          </div>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mi </a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#estudios">Estudios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
       <section id="inicio">
-        <div class="superior">
-          <h1>Nicolas Olmedo</h1>
-          <p>Estudiante de desarrollo web</p>
+        <div class="foto">
+          <img src="images/nico.jpg" alt="Foto de portfolio" width="200px" />
         </div>
       </section>
       <section id="sobre-mi">
@@ -36,14 +40,14 @@
           <p>
             Bienvenido a Mi Portfolio. Me llamo Nicolas y tengo 25 años,soy de
             Villa de Mayo, barrio del partido de Malvinas Argentinas.
-            Actualmente estoy haciendo el curso de Desarrollador Web en la UTN.
+            Actualmente, estoy haciendo el curso de Desarrollador Web en la UTN.
           </p>
           <p>
-            Desde chico me intereso el tema sobre como se desarrollan las
-            paginas en internet y las aplicaciones, es por eso que en el momento
-            en que tuve la oportunidad empece este curso sin pensarlo.
-            Actualmente estamos aprendiendo la parte de desarrollo Front End, en
-            el cual vimos hasta ahora HTML, CSS y como utilizar GITHUB.
+            Desde chico, me intereso el desarrollo de páginas web y las
+            aplicaciones, es por eso que en el momento en que tuve la
+            oportunidad empece este curso sin pensarlo. Actualmente, estamos
+            aprendiendo la parte de desarrollo Front End, en el cual vimos hasta
+            ahora HTML, CSS y como utilizar GITHUB.
           </p>
           <p>
             Mi objetivo en este curso es aprender todos los contenidos de la
@@ -97,11 +101,5 @@
         <p>Curso de Desarrollador Web</p>
       </div>
     </footer>
-    <script>
-      const botonMenu=document,getElementByld('boton-menu');
-          const menuNav=document,querySelector('nav ul');
-
-          botonMenu.addEventListener('click',()=>{menuNav.classList.toggle('activo');});
-    </script>
   </body>
 </html>

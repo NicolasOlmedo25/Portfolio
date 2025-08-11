@@ -12,7 +12,7 @@ body{
 }
 
 header{
-    background-color: #222;
+    background-color: gray;
     padding: 25px;
 }
 
@@ -30,7 +30,7 @@ nav ul li a{
     color: white;
     text-decoration: none;
     font-weight: bolder;
-    font-size: 17px;
+    font-size: 10px;
     transition: color 0.3s ease;
 }
 
@@ -38,41 +38,41 @@ nav ul li a:hover{
     color: yellow;
 }
 
-#boton-menu{
-    display: none;
+.superior{
+    display: flex;
+    justify-content: space-between;
+}
+
+.foto{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+div img{
+    border: black solid;
+    border-radius: 50px;
+    
 }
 
 
+@media (max-width: 768px) {
+  .superior {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
+  nav ul {
+    flex-direction: column;
+  }
 
-@media(max-width:768px){
-    nav ul{
-        flex-direction: column;
-        align-items: center;
-        gap: 8px;
-    }
-    nav ul li{
-        margin: 0;
-    }
+  nav ul li {
+    margin: 10px;
+  }
 
-    #boton-menu{
-        display: block;
-    }
-
-    nav ul{
-        display: none;
-    }
-
-    nav ul.activo{
-        display: flex;
-    }
-
-    nav ul li{
-        margin: 10px;
-    }
-
-    nav ul li a{
-        font-size: 15px;
-    }
-
+  nav ul li a{
+    font-size: 15px;
+  }
 }
+
