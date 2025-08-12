@@ -18,6 +18,9 @@
             <h1>Nicolas Olmedo</h1>
             <p>Estudiante de desarrollo web</p>
           </div>
+          <button class="menu-toggle" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i>
+          </button>
           <ul>
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#sobre-mi">Sobre mi </a></li>
@@ -117,5 +120,13 @@
         <p>Curso de Desarrollador Web</p>
       </div>
     </footer>
+    <script>
+      const toggleBtn = document.querySelector(".menu-toggle");
+      const menu = document.querySelector(".menu");
+
+      toggleBtn.addEventListener("click", () => {
+        menu.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>
