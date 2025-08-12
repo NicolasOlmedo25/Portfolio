@@ -30,12 +30,16 @@
         color: white;
         text-decoration: none;
         font-weight: bolder;
-        font-size: 10px;
+        font-size: 15px;
         transition: color 0.3s ease;
     }
 
     nav ul li a:hover{
         color: rgb(30, 33, 70);
+    }
+
+    section{
+        padding: 60px 20px;
     }
 
     .superior{
@@ -54,7 +58,6 @@
     .foto{
         display: flex;
         justify-content: center;
-        margin-top: 20px;
     }
 
     .descripcion{
@@ -98,7 +101,8 @@
 
     div p{
         text-align: center;
-        font-size: 10px;
+        font-size: 18px;
+        line-height: 1.6;
     }
 
     div img{
@@ -111,7 +115,7 @@
         display: flex;
         justify-content: center;
         margin-top: 15px;
-        margin-bottom: 15px;
+        margin-bottom: 30px;
     }
 
     .estudio{
@@ -130,11 +134,38 @@
         margin: 20px
     }
 
+    .info-estudio h3{
+        padding: 20px;
+        font-size: 30px;
+        text-decoration-line: underline;
+    }
+
     .contact{
         display: flex;
         justify-content: center;
         margin-top: 15px;
         margin-bottom: 15px;
+    }
+
+    .contactame{
+
+        border: rgb(30, 33, 70) solid;
+        border-radius: 15px;
+        background-color: white;
+        text-align: center;
+        margin: 20px
+
+    }
+
+    .contactame li{
+        list-style: none;
+        padding: 10px;
+    }
+
+    .contactame h3{
+        padding: 20px;
+        font-size: 30px;
+        text-decoration-line: underline;
     }
 
 
@@ -155,6 +186,10 @@
 
     nav ul li a{
         font-size: 15px;
+    }
+
+    section{
+        padding: 40px 20px;
     }
     }
 
