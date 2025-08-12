@@ -180,15 +180,20 @@
         cursor: pointer;
     }
 
+    .menu{
+        list-style: none;
+        padding-left: 0;
+    }
+
 
     @media (max-width: 768px) {
     .superior {
+        display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
         justify-content: center;
         position: relative;
-
     }
 
     nav ul {
@@ -210,8 +215,14 @@
     .menu-toggle {
         display: block;
         position: absolute;
-        top: 30px;
-        right: 30px;
+        top: 15px;
+        right: 20px;
+        font-size: 28px;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        z-index: 2000;
     }
 
     nav ul.menu {
@@ -221,20 +232,19 @@
         background-color: gray;
         width: 100%;
         position: absolute;
-        top: 90px;
+        top: 70px;
         left: 0;
+        padding: 10px 0;
+        z-index: 1500;
     }
 
     nav ul.menu.active {
         display: flex;
     }
 
-    nav ul.menu li {
+    nav ul.menu li a{
         margin: 15px 0;
     }
 
-    .superior {
-        position: relative;
-    }
 }
 

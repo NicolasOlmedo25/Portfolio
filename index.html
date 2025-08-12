@@ -128,5 +128,12 @@
         menu.classList.toggle("active");
       });
     </script>
+    <script>
+      document.querySelectorAll(".menu a").forEach((link) => {
+        link.addEventListener("click", () => {
+          menu.classList.remove("active");
+        });
+      });
+    </script>
   </body>
 </html>
