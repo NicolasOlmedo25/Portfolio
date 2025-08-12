@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/303fbe13e9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="superior">
+          <div class="nombre">
+            <h1>Nicolas Olmedo</h1>
+            <p>Estudiante de desarrollo web</p>
+          </div>
+          <button class="menu-toggle" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul class="menu">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mi </a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#estudios">Estudios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="inicio">
+        <div class="foto">
+          <img src="images/nico.jpg" alt="Foto de portfolio" width="200px" />
+        </div>
+      </section>
+      <section id="sobre-mi">
+        <div class="sub-sobre-mi">
+          <h2>Sobre mi</h2>
+        </div>
+        <div class="descripcion">
+          <p>
+            Bienvenido a Mi Portfolio. Me llamo Nicolas y tengo 25 años,soy de
+            Villa de Mayo, barrio del partido de Malvinas Argentinas.
+            Actualmente, estoy haciendo el curso de Desarrollador Web en la UTN.
+          </p>
+          <p>
+            Desde chico, me intereso el desarrollo de páginas web y las
+            aplicaciones, es por eso que en el momento en que tuve la
+            oportunidad empece este curso sin pensarlo. Actualmente, estamos
+            aprendiendo la parte de desarrollo Front End, en el cual vimos hasta
+            ahora HTML, CSS y como utilizar GITHUB.
+          </p>
+          <p>
+            Mi objetivo en este curso es aprender todos los contenidos de la
+            mejor manera para algun dia conseguir un buen trabajo y ser un gran
+            profesional.
+          </p>
+        </div>
+      </section>
+      <section id="habilidades">
+        <div class="skills">
+          <h2>Habilidades</h2>
+        </div>
+        <div class="iconos">
+          <div class="icono">
+            <i class="fab fa-html5"></i>
+            <p>HTML</p>
+          </div>
+          <div class="icono">
+            <i class="fab fa-css3-alt"></i>
+            <p>CSS</p>
+          </div>
+          <div class="icono">
+            <i class="fab fa-github"></i>
+            <p>GitHub</p>
+          </div>
+        </div>
+      </section>
+      <section id="estudios">
+        <div class="estudio">
+          <h2>Estudios</h2>
+        </div>
+        <div class="info-estudio">
+          <h3>Tecnicatura en informatica</h3>
+          <em>Universidad Nacional General Sarmiento</em>
+          <p>
+            Actualmente estoy en mi segundo año de carrera, en el cual adquiri
+            solidos conocimientos en programacion, en especial sobre python,
+            esto me ayudo muchisimo a mejorar mi pensamiento logico y aprendi a
+            resolver problemas mas rapida y eficientemente.
+          </p>
+          <h3>Curso de desarrolador web Full Stack</h3>
+          <em>Universidad Tecnologica Nacional</em>
+          <p>
+            Actualmente me estoy capacitando en desarrollo web full stack,
+            aprendiendo tecnologías como HTML, CSS y JAVASCRIPT.
+          </p>
+        </div>
+      </section>
+      <section id="contacto">
+        <div class="contact">
+          <h2>Contacto</h2>
+        </div>
+        <div class="contactame">
+          <h3>Comunicate conmigo</h3>
+          <ul>
+            <li><em>WhatsApp: 1560531563</em></li>
+            <li><em>Mail: nicolasolmedo00@hotmail.com</em></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="pie">
+        <p>&copy; 2025 - Nicolas Olmedo</p>
+        <p>Curso de Desarrollador Web</p>
+      </div>
+    </footer>
+    <script>
+      const toggleBtn = document.querySelector(".menu-toggle");
+      const menu = document.querySelector(".menu");
+
+      toggleBtn.addEventListener("click", () => {
+        menu.classList.toggle("active");
+      });
+    </script>
+    <script>
+      document.querySelectorAll(".menu a").forEach((link) => {
+        link.addEventListener("click", () => {
+          menu.classList.remove("active");
+        });
+      });
+    </script>
+  </body>
+</html>
