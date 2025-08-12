@@ -114,6 +114,11 @@
         
     }
 
+    .foto img{
+        width: 300px;
+        max-width: 90%;
+    }
+
     .skills{
         display: flex;
         justify-content: center;
